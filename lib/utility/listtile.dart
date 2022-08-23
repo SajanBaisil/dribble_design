@@ -25,8 +25,14 @@ class ExerciseTile extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Container(
+                      
                       padding: const EdgeInsets.all(16),
-                      color: Colors.orange,
+                      decoration:const BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [Colors.cyan,Colors.lightBlue])
+                      ) ,
                       child:  Icon(
                         iconImage,
                         color: Colors.white,
